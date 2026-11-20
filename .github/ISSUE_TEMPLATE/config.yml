@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/nabi-lang/nabi/discussions
+    about: Ask and discuss in GitHub Discussions; issues are for bugs and concrete requests.
+  - name: Security vulnerability
+    url: https://github.com/nabi-lang/www/security/advisories/new
+    about: Report it privately, never in a public issue. See SECURITY.md.

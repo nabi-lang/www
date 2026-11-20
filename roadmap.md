@@ -1,0 +1,80 @@
+# Roadmap
+
+<div class="lead-sm">What is being built, in the order it ships. A version ships when its work is done; there are no dates. Every item is tracked in a <a href="https://github.com/nabi-lang/nabi/milestones">GitHub milestone</a>.</div>
+
+<div class="rm-legend"><span class="rm-pill now">In progress</span><span class="rm-pill next">Next</span><span class="rm-pill later">Later</span><span class="rm-pill done">Shipped</span></div>
+
+## In progress
+
+<div class="rm">
+<section class="rm-card now">
+<header><span class="rm-ver">0.1.0</span><span class="rm-pill now">In progress</span></header>
+<h3>First release</h3>
+<ul>
+<li>The toolchain: <code>nabic</code> with its own code generator and linker, <code>nabi</code>, <code>nabils</code>, a REPL and a Jupyter kernel</li>
+<li>Archives for eight hosts and the install script at <code>nabi.sh</code>: macOS on Apple silicon; Windows on x64 and arm64; Linux on x64 and arm64, glibc and static musl; FreeBSD on x64</li>
+<li>17 build targets, each tested where it runs: the eight hosts, 32-bit x86 Linux and Windows, 32-bit ARM Linux (glibc and musl), WebAssembly (browser, WASI preview 2, WASI preview 1 with threads), Android x86-64 on the emulator and the iOS simulator</li>
+</ul>
+</section>
+</div>
+
+## Next
+
+<div class="rm">
+<section class="rm-card next">
+<header><span class="rm-ver">0.2</span><span class="rm-pill next">Next</span></header>
+<h3>Optional LLVM backend</h3>
+<ul>
+<li>An optional <code>codegen-llvm</code> component, installed with <code>nabi component add codegen-llvm</code> and selected per profile in <code>nabi.nabion</code> (<code>profile: { "release": { codegen_backend: "llvm" } }</code>) or with <code>-C codegen-backend=llvm</code>; the default stays Nabi's own code generator</li>
+<li><code>nabi test --cross-check=llvm</code> builds the tests with both code generators and compares their output</li>
+</ul>
+</section>
+<section class="rm-card next">
+<header><span class="rm-ver">0.2</span><span class="rm-pill next">Next</span></header>
+<h3>More targets</h3>
+<ul>
+<li>The targets in progress, once each runs on real hardware: Android arm64 and iOS devices (<code>aarch64-linux-android</code>, <code>aarch64-apple-ios</code>), RISC-V 64 Linux (<code>riscv64gc-unknown-linux-gnu</code>), IBM Power (<code>powerpc64le-unknown-linux-gnu</code>), IBM Z (<code>s390x-unknown-linux-gnu</code>) and embedded RISC-V (<code>riscv32imac-unknown-none-elf</code>)</li>
+</ul>
+</section>
+</div>
+
+## Later
+
+<div class="rm">
+<section class="rm-card later">
+<header><span class="rm-pill later">Later</span></header>
+<h3>MLIR kernels</h3>
+<ul>
+<li>MLIR through the <code>codegen-llvm</code> component: marked kernel functions are compiled for offload while the rest of the program keeps Nabi's own code generator</li>
+</ul>
+</section>
+</div>
+
+## Libraries
+
+<div class="lead-sm">The standard library stays narrow: language support, collections, text, numbers, time, I/O, networking and TLS. Everything else is a first-party package with its own version, published to <a href="https://packages.nabi-lang.org">packages.nabi-lang.org</a>. The first-party packages come with the toolchain: code that uses one gets it added on its first build, with no <code>nabi add</code>.</div>
+
+<div class="rm">
+<section class="rm-card now">
+<header><span class="rm-ver">0.1</span><span class="rm-pill now">In progress</span></header>
+<h3>First-party packages</h3>
+<ul>
+<li>Science on core's <code>Array</code>: <code>linalg</code>, <code>sparse</code>, <code>autodiff</code>, <code>signal</code>, <code>table</code> (with Arrow and Parquet), <code>stats</code>, <code>special</code>, <code>optimize</code>, <code>interpolate</code>, <code>spatial</code>, <code>ode</code>, <code>units</code> and <code>plot</code></li>
+<li>Formats and the web: <code>json</code>, <code>toml</code>, <code>csv</code>, <code>http</code> and <code>markdown</code>, and <code>nabi-syntax</code> for highlighting</li>
+<li><code>regex</code>: linear-time matching (no backtracking), Unicode classes, captures, iteration and replacement</li>
+</ul>
+</section>
+<section class="rm-card next">
+<header><span class="rm-pill next">Next</span></header>
+<h3>Everyday packages</h3>
+<ul>
+<li><code>cli</code>: argument parsing with generated help and subcommands</li>
+<li><code>log</code>: leveled, structured logging with pluggable sinks</li>
+<li><code>compress</code>: deflate, gzip and zstd, streaming</li>
+<li><code>uuid</code>: versions 4 and 7, parsing and formatting</li>
+<li><code>sqlite</code>: SQLite bindings</li>
+</ul>
+</section>
+</div>
+
+Archives and the install script: [Download](download.html).

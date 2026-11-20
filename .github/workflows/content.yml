@@ -1,0 +1,48 @@
+# Check this branch and publish it to the site.
+name: Content / Check, bundle and deploy
+
+on:
+  push:
+    branches: [main, "v*"]
+  pull_request:
+  merge_group:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dco:
+    name: DCO
+    uses: nabi-lang/.github/.github/workflows/reusable-dco.yml@v1.0.0
+
+  content:
+    name: Content
+    uses: nabi-lang/.github/.github/workflows/reusable-content.yml@v1.0.0
+    with:
+      check: true
+    secrets: inherit
+
+  # The one required check (rulesets/main.json): passes when every job
+  # passed or was skipped.
+  ci-gate:
+    name: CI gate
+    needs: [dco, content]
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check the job results
+        env:
+          RESULTS: ${{ join(needs.*.result, ' ') }}
+        run: |
+          echo "results: $RESULTS"
+          for r in $RESULTS; do
+            case $r in
+              success | skipped) ;;
+              *)
+                echo "::error::a gate job did not pass: $r"
+                exit 1
+                ;;
+            esac
+          done
