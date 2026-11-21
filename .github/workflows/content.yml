@@ -14,11 +14,11 @@ permissions:
 jobs:
   dco:
     name: DCO
-    uses: nabi-lang/.github/.github/workflows/reusable-dco.yml@v1.0.2
+    uses: nabi-lang/.github/.github/workflows/reusable-dco.yml@v1.0.3
 
   content:
     name: Content
-    uses: nabi-lang/.github/.github/workflows/reusable-content.yml@v1.0.2
+    uses: nabi-lang/.github/.github/workflows/reusable-content.yml@v1.0.3
     with:
       check: true
     secrets: inherit
