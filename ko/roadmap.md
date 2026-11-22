@@ -39,6 +39,7 @@
 ## 출시됨
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code>가 <code>nabi.lock</code>에 고정된 패키지를 레지스트리의 보안 권고와 대조합니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-11-22">2026-11-22</time><p>수정 릴리스입니다. <code>spatial</code>과 <code>sparse</code>처럼 타입이 <code>any</code>를 거치는 패키지가 다시 의존성으로 빌드됩니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.2">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.1</span><time datetime="2026-11-22">2026-11-22</time><p>수정 릴리스입니다. 각 패키지는 자기 의존성만 보고, 툴체인은 갱신된 공식 패키지를 담습니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.1">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.0</span><time datetime="2026-11-22">2026-11-22</time><p>Nabi의 첫 릴리스입니다. 컴파일러, <code>nabi</code> 패키지 도구, 언어 서버, 런타임, 표준 라이브러리와 공식 패키지 20개를 담았고, Nabi 자체 코드 생성기와 링커로 지원 타겟 17개를, 릴리스 아카이브로 호스트 8개를 지원합니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.0">릴리스 노트</a></p></div>
