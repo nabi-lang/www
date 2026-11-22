@@ -170,7 +170,10 @@ ship() {
 		exit 1
 	}
 	link="<a href=\"https://github.com/nabi-lang/nabi/releases/tag/v$version\">$5</a>"
-	ENTRY="<div class=\"rm-entry\"><span class=\"rm-ver\">$version</span><time datetime=\"$date\">$date</time><p>$(html "$6") $link</p></div>" \
+	# No space after a full-width stop (Chinese).
+	sp=' '
+	case $6 in *。) sp='' ;; esac
+	ENTRY="<div class=\"rm-entry\"><span class=\"rm-ver\">$version</span><time datetime=\"$date\">$date</time><p>$(html "$6")$sp$link</p></div>" \
 	SHIPPED=$2 LATER=$3 LIBS=$4 VER=$version awk '
 		{ line[++n] = $0 }
 		END {

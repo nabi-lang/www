@@ -39,7 +39,7 @@
 ## 已发布
 
 <div class="rm-log">
-<div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code> 用注册表的安全公告检查 <code>nabi.lock</code> 中锁定的包。 <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">发布说明</a></p></div>
+<div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code> 用注册表的安全公告检查 <code>nabi.lock</code> 中锁定的包。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">发布说明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-11-22">2026-11-22</time><p>修复版本：类型经过 <code>any</code> 的包（如 <code>spatial</code> 和 <code>sparse</code>）再次可以作为依赖构建。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.2">发布说明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.1</span><time datetime="2026-11-22">2026-11-22</time><p>修复版本：每个包只能看到自己的依赖，工具链附带更新后的官方包。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.1">发布说明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.0</span><time datetime="2026-11-22">2026-11-22</time><p>Nabi 的第一个版本：编译器、<code>nabi</code> 包管理工具、语言服务器、运行时、标准库和 20 个官方包，带有 Nabi 自己的代码生成器和链接器，支持 17 个目标，并为 8 个主机提供发布压缩包。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.0">发布说明</a></p></div>
