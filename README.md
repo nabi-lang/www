@@ -4,8 +4,8 @@
 
 *Clear rules, free as a butterfly.*
 
-Content for the pages of nabi-lang.org that do not change with a release: the home page, download, roadmap, FAQ and news, with their Korean editions in `ko/` (served under `/ko/`). The site renders these files; this repository holds only content. The home page's body is built by the site itself, so `index.md` gives only its title.
+Content for the pages of nabi-lang.org that do not change with a release: the home page, download, roadmap, FAQ, community, governance, brand and news, with their Korean editions in `ko/` (served under `/ko/`). The site renders these files; this repository holds only content. The home page's body is built by the site itself, so `index.md` gives only its title.
 
 Only `main` is served. Versioned docs live in [nabi-lang/docs](https://github.com/nabi-lang/docs).
 
-`news/` holds the posts (`news/<name>.md`, Korean ones in `ko/news/`); the site lists them on `news/index.md`'s page, newest first. A post's second line is `<!-- date: YYYY-MM-DD -->`, or `<!-- date: unreleased -->` until it goes out: set the date when the release it announces is published. `faq.md` is the FAQ.
+`news/` holds the posts (`news/<name>.md`, Korean ones in `ko/news/`); the site lists them on `news/index.md`'s page, newest first. A post's second line is `<!-- date: YYYY-MM-DD -->`, or `<!-- date: unreleased -->` until it goes out: set the date when the release it announces is published. `faq.md` is the FAQ. `community.md` lists where to ask and follow, the code of conduct, contributing and security; `governance.md` says who decides; `brand.md` covers the name and the mark and links the files to download, which the web kit publishes under `/brand/`. The release notes under `/releases` are not here: the site renders them from the toolchain's `CHANGELOG.md`.
