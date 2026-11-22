@@ -39,6 +39,8 @@
 ## Shipped
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-11-22">2026-11-22</time><p>A fix release: packages whose types go through <code>any</code>, such as <code>spatial</code> and <code>sparse</code>, build again as dependencies. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.2">Release notes</a></p></div>
+<div class="rm-entry"><span class="rm-ver">0.1.1</span><time datetime="2026-11-22">2026-11-22</time><p>A fix release: each package sees only its own dependencies, and the toolchain bundles the updated official packages. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.1">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.0</span><time datetime="2026-11-22">2026-11-22</time><p>The first release of Nabi: the compiler, the <code>nabi</code> package tool, the language server, the runtime, the standard library and 20 official packages, with Nabi's own code generator and linker for 17 supported targets and release archives for 8 hosts. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.0">Release notes</a></p></div>
 </div>
 
