@@ -4,20 +4,6 @@
 
 <div class="rm-legend"><span class="rm-pill now">In progress</span><span class="rm-pill next">Next</span><span class="rm-pill later">Later</span><span class="rm-pill done">Shipped</span></div>
 
-## In progress
-
-<div class="rm">
-<section class="rm-card now">
-<header><span class="rm-ver">0.1.0</span><span class="rm-pill now">In progress</span></header>
-<h3>First release</h3>
-<ul>
-<li>The toolchain: <code>nabic</code> with its own code generator and linker, <code>nabi</code>, <code>nabils</code>, a REPL and a Jupyter kernel</li>
-<li>Archives for eight hosts and the install script at <code>nabi.sh</code>: macOS on Apple silicon; Windows on x64 and arm64; Linux on x64 and arm64, glibc and static musl; FreeBSD on x64</li>
-<li>17 build targets, each tested where it runs: the eight hosts, 32-bit x86 Linux and Windows, 32-bit ARM Linux (glibc and musl), WebAssembly (browser, WASI preview 2, WASI preview 1 with threads), Android x86-64 on the emulator and the iOS simulator</li>
-</ul>
-</section>
-</div>
-
 ## Next
 
 <div class="rm">
@@ -50,13 +36,19 @@
 </section>
 </div>
 
+## Shipped
+
+<div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.0</span><time datetime="2026-11-22">2026-11-22</time><p>The first release of Nabi: the compiler, the <code>nabi</code> package tool, the language server, the runtime, the standard library and 20 official packages, with Nabi's own code generator and linker for 17 supported targets and release archives for 8 hosts. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.0">Release notes</a></p></div>
+</div>
+
 ## Libraries
 
 <div class="lead-sm">The standard library stays narrow: language support, collections, text, numbers, time, I/O, networking and TLS. Everything else is a first-party package with its own version, published to <a href="https://packages.nabi-lang.org">packages.nabi-lang.org</a>. The first-party packages come with the toolchain: code that uses one gets it added on its first build, with no <code>nabi add</code>.</div>
 
 <div class="rm">
-<section class="rm-card now">
-<header><span class="rm-ver">0.1</span><span class="rm-pill now">In progress</span></header>
+<section class="rm-card done">
+<header><span class="rm-ver">0.1</span><span class="rm-pill done">Shipped</span></header>
 <h3>First-party packages</h3>
 <ul>
 <li>Science on core's <code>Array</code>: <code>linalg</code>, <code>sparse</code>, <code>autodiff</code>, <code>signal</code>, <code>table</code> (with Arrow and Parquet), <code>stats</code>, <code>special</code>, <code>optimize</code>, <code>interpolate</code>, <code>spatial</code>, <code>ode</code>, <code>units</code> and <code>plot</code></li>

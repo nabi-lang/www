@@ -4,20 +4,6 @@
 
 <div class="rm-legend"><span class="rm-pill now">진행 중</span><span class="rm-pill next">다음</span><span class="rm-pill later">나중</span><span class="rm-pill done">출시됨</span></div>
 
-## 진행 중
-
-<div class="rm">
-<section class="rm-card now">
-<header><span class="rm-ver">0.1.0</span><span class="rm-pill now">진행 중</span></header>
-<h3>첫 릴리스</h3>
-<ul>
-<li>툴체인: 자체 코드 생성기와 링커를 갖춘 <code>nabic</code>, <code>nabi</code>, <code>nabils</code>, REPL, Jupyter 커널</li>
-<li>호스트 여덟 곳의 압축 파일과 <code>nabi.sh</code>의 설치 스크립트: Apple 실리콘 macOS, x64와 arm64 Windows, x64와 arm64 Linux(glibc와 정적 musl), x64 FreeBSD</li>
-<li>실제로 돌아가는 환경에서 하나하나 시험한 빌드 대상 17개: 호스트 여덟 곳, 32비트 x86 Linux와 Windows, 32비트 ARM Linux(glibc와 musl), WebAssembly(브라우저, WASI preview 2, 스레드를 쓰는 WASI preview 1), 에뮬레이터의 Android x86-64, iOS 시뮬레이터</li>
-</ul>
-</section>
-</div>
-
 ## 다음
 
 <div class="rm">
@@ -50,13 +36,19 @@
 </section>
 </div>
 
+## 출시됨
+
+<div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.0</span><time datetime="2026-11-22">2026-11-22</time><p>Nabi의 첫 릴리스입니다. 컴파일러, &lt;code&gt;nabi&lt;/code&gt; 패키지 도구, 언어 서버, 런타임, 표준 라이브러리와 공식 패키지 20개를 담았고, Nabi 자체 코드 생성기와 링커로 지원 타겟 17개를, 릴리스 아카이브로 호스트 8개를 지원합니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.0">릴리스 노트</a></p></div>
+</div>
+
 ## 라이브러리
 
 <div class="lead-sm">표준 라이브러리는 좁게 유지합니다. 언어 지원, 컬렉션, 텍스트, 수, 시간, 입출력, 네트워크, TLS까지입니다. 나머지는 버전을 따로 매기는 공식 패키지로, <a href="https://packages.nabi-lang.org">packages.nabi-lang.org</a>에 공개합니다. 공식 패키지는 툴체인과 함께 설치되므로, 코드에서 쓰기만 하면 첫 빌드 때 추가되고 <code>nabi add</code>는 필요 없습니다.</div>
 
 <div class="rm">
-<section class="rm-card now">
-<header><span class="rm-ver">0.1</span><span class="rm-pill now">진행 중</span></header>
+<section class="rm-card done">
+<header><span class="rm-ver">0.1</span><span class="rm-pill done">출시됨</span></header>
 <h3>공식 패키지</h3>
 <ul>
 <li>core의 <code>Array</code> 위의 과학 계산: <code>linalg</code>, <code>sparse</code>, <code>autodiff</code>, <code>signal</code>, <code>table</code>(Arrow와 Parquet 포함), <code>stats</code>, <code>special</code>, <code>optimize</code>, <code>interpolate</code>, <code>spatial</code>, <code>ode</code>, <code>units</code>, <code>plot</code></li>

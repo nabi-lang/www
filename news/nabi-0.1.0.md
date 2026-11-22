@@ -1,6 +1,6 @@
 # Announcing Nabi 0.1.0
 
-<!-- date: unreleased -->
+<!-- date: 2026-11-22 -->
 
 <div class="lead-sm">Nabi 0.1.0 is the first release of Nabi: a compiled language, its toolchain, a package registry and the sites around them. This post says what is in it, what runs where, what is not done yet, and how to take part.</div>
 
