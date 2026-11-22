@@ -1,9 +1,10 @@
 #!/bin/sh
-# Mark a toolchain release shipped on the roadmap, in roadmap.md and
-# ko/roadmap.md:
+# Mark a toolchain release shipped on the roadmap, in roadmap.md,
+# ko/roadmap.md, zh-hans/roadmap.md and zh-hant/roadmap.md:
 #
 #   scripts/roadmap-ship.sh [-n] [--date YYYY-MM-DD] [--changelog <file>]
-#                           [--summary-ko <text>] <version>
+#                           [--summary-ko <text>] [--summary-zh-hans <text>]
+#                           [--summary-zh-hant <text>] <version>
 #
 # The card whose rm-ver is <version> leaves its section (a section left
 # with no card goes too), and an entry with the date, the Summary line of
@@ -14,8 +15,9 @@
 # --changelog defaults to ../nabi/CHANGELOG.md, else the file at the
 # v<version> tag on GitHub. The date defaults to the one in the section's
 # heading (`## 0.1.0 (2026-12-01)`). The Korean entry takes --summary-ko,
-# else the English summary. -n (--dry-run) prints the diff and writes
-# nothing.
+# the Chinese ones --summary-zh-hans and --summary-zh-hant, each else the
+# English summary; a language without its roadmap.md is left out. -n
+# (--dry-run) prints the diff and writes nothing.
 set -eu
 # Bytes, not collation: BSD awk compares strings with strcoll, under which
 # some Hangul headings are equal.
@@ -23,11 +25,11 @@ LC_ALL=C
 export LC_ALL
 
 usage() {
-	echo "usage: scripts/roadmap-ship.sh [-n] [--date YYYY-MM-DD] [--changelog <file>] [--summary-ko <text>] <version>" >&2
+	echo "usage: scripts/roadmap-ship.sh [-n] [--date YYYY-MM-DD] [--changelog <file>] [--summary-ko <text>] [--summary-zh-hans <text>] [--summary-zh-hant <text>] <version>" >&2
 	exit 2
 }
 
-dry=0 date='' changelog='' summary_ko='' version=''
+dry=0 date='' changelog='' summary_ko='' summary_hans='' summary_hant='' version=''
 while [ $# -gt 0 ]; do
 	case $1 in
 	-n | --dry-run) dry=1 ;;
@@ -44,6 +46,16 @@ while [ $# -gt 0 ]; do
 	--summary-ko)
 		[ $# -ge 2 ] || usage
 		summary_ko=$2
+		shift
+		;;
+	--summary-zh-hans)
+		[ $# -ge 2 ] || usage
+		summary_hans=$2
+		shift
+		;;
+	--summary-zh-hant)
+		[ $# -ge 2 ] || usage
+		summary_hant=$2
 		shift
 		;;
 	-*) usage ;;
@@ -135,6 +147,13 @@ esac
 	echo "note: no --summary-ko; ko/roadmap.md gets the English summary" >&2
 	summary_ko=$summary
 }
+for l in zh-hans zh-hant; do
+	[ -f "$root/$l/roadmap.md" ] || continue
+	case $l in
+	zh-hans) [ -n "$summary_hans" ] || { echo "note: no --summary-zh-hans; zh-hans/roadmap.md gets the English summary" >&2; summary_hans=$summary; } ;;
+	zh-hant) [ -n "$summary_hant" ] || { echo "note: no --summary-zh-hant; zh-hant/roadmap.md gets the English summary" >&2; summary_hant=$summary; } ;;
+	esac
+done
 
 # Markdown inline text to HTML: escape, then `code`.
 # shellcheck disable=SC2016 # the backticks are literal
@@ -225,3 +244,5 @@ ship() {
 
 ship "$root/roadmap.md" "Shipped" "Later" "Libraries" "Release notes" "$summary"
 ship "$root/ko/roadmap.md" "출시됨" "나중" "라이브러리" "릴리스 노트" "$summary_ko"
+[ ! -f "$root/zh-hans/roadmap.md" ] || ship "$root/zh-hans/roadmap.md" "已发布" "以后" "库" "发布说明" "$summary_hans"
+[ ! -f "$root/zh-hant/roadmap.md" ] || ship "$root/zh-hant/roadmap.md" "已發布" "之後" "函式庫" "發行說明" "$summary_hant"
