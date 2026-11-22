@@ -1,7 +1,6 @@
 # Terms of use
 
-> [!NOTE]
-> **Draft.** This text has not been reviewed by a lawyer yet and may change.
+Effective 2026-11-23.
 
 These terms apply to every Nabi site: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org and nabi.sh, run by **DaminStudio** ("we"). By using a site you agree to them.
 
@@ -12,8 +11,8 @@ The docs and the toolchain are open source; their licenses (MIT or Apache-2.0 fo
 ## The package registry
 
 - You may publish only code you have the right to publish, under the license you state in it. You keep your rights to it; publishing gives us and everyone the right to store it, copy it and serve it to users of the registry, as long as the registry runs.
-- A published version is permanent: you can yank it, but not delete it, so that builds that depend on it keep working. We may remove a version or an account that breaks the [package usage policy](https://packages.nabi-lang.org/policy) or the law.
-- Keep your account and your tokens safe. What is published with them is your responsibility.
+- Within 72 hours of publishing a version, and while no other package depends on it, you can delete it; its number is never used again. After that a version is permanent: you can yank it, but not delete it, so that builds that depend on it keep working. We may remove a version or an account that breaks the [package usage policy](https://packages.nabi-lang.org/policy) or the law.
+- You log in with a GitHub account that has two-factor authentication on. Keep your account and your tokens safe. What is published with them is your responsibility.
 
 ## The playground
 
