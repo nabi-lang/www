@@ -1,0 +1,42 @@
+name: Translation problem
+description: A wrong, unclear or unnatural translation on a Korean or Chinese page
+title: "i18n: "
+labels: ["area: i18n"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reading closely. Reports in English, Korean or Chinese are all welcome.
+        感谢你的反馈，可以用中文填写。 感謝你的回報，可以用中文填寫。
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - 简体中文 (zh-Hans)
+        - 繁體中文 (zh-Hant)
+        - 한국어 (ko)
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The address of the page, with the heading anchor if you have it.
+      placeholder: https://docs.nabi-lang.org/latest/zh-hans/learn/...
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: Current text
+      description: The sentence or term as the page has it.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested text
+      description: What it should say, and why if it isn't obvious (wrong meaning, unnatural, a mainland term on a Taiwan page, ...).
+    validations:
+      required: true
