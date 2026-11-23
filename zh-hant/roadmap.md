@@ -1,6 +1,6 @@
 # 路線圖
 
-<div class="lead-sm">正在開發的項目，依發布順序排列。一個版本在其工作完成時發布，不訂日期。每個項目都在 <a href="https://github.com/nabi-lang/nabi/milestones">GitHub 里程碑</a>中追蹤。</div>
+<div class="lead-sm">正在開發的項目，依發布順序排列。版本在工作完成後發布，沒有預定日期。每個項目都在 <a href="https://github.com/nabi-lang/nabi/milestones">GitHub 里程碑</a>中追蹤。</div>
 
 <div class="rm-legend"><span class="rm-pill now">進行中</span><span class="rm-pill next">下一步</span><span class="rm-pill later">之後</span><span class="rm-pill done">已發布</span></div>
 
@@ -31,7 +31,7 @@
 <header><span class="rm-pill later">之後</span></header>
 <h3>MLIR 核心函式</h3>
 <ul>
-<li>透過 <code>codegen-llvm</code> 元件使用 MLIR：標記的核心函式會編譯為卸載執行，程式的其餘部分仍使用 Nabi 自己的程式碼產生器</li>
+<li>透過 <code>codegen-llvm</code> 元件使用 MLIR：標記的核心函式會編譯成卸載（offload）到其他裝置上執行的程式碼，程式的其餘部分仍由 Nabi 自己的程式碼產生器處理</li>
 </ul>
 </section>
 </div>
@@ -40,14 +40,14 @@
 
 <div class="rm-log">
 <div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code> 以登錄庫的安全性公告檢查 <code>nabi.lock</code> 中鎖定的套件。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">發行說明</a></p></div>
-<div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-11-22">2026-11-22</time><p>修正版本：型別經過 <code>any</code> 的套件（例如 <code>spatial</code> 與 <code>sparse</code>）再次可以作為相依套件建置。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.2">發行說明</a></p></div>
-<div class="rm-entry"><span class="rm-ver">0.1.1</span><time datetime="2026-11-22">2026-11-22</time><p>修正版本：每個套件只看得到自己的相依套件，工具鏈內含更新後的官方套件。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.1">發行說明</a></p></div>
+<div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-11-22">2026-11-22</time><p>修正版本：型別經過 <code>any</code> 的套件（例如 <code>spatial</code> 與 <code>sparse</code>）又能作為相依套件正常建置。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.2">發行說明</a></p></div>
+<div class="rm-entry"><span class="rm-ver">0.1.1</span><time datetime="2026-11-22">2026-11-22</time><p>修正版本：每個套件只看得到自己的相依套件，工具鏈也隨附更新後的官方套件。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.1">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.0</span><time datetime="2026-11-22">2026-11-22</time><p>Nabi 的第一個版本：編譯器、<code>nabi</code> 套件工具、語言伺服器、執行環境、標準函式庫與 20 個官方套件，搭配 Nabi 自己的程式碼產生器與連結器，支援 17 個目標，並為 8 個主機提供發行壓縮檔。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.0">發行說明</a></p></div>
 </div>
 
 ## 函式庫
 
-<div class="lead-sm">標準函式庫維持精簡：語言支援、集合型別、文字、數值、時間、I/O、網路與 TLS。其餘一切都是擁有獨立版本的官方套件，發布在 <a href="https://packages.nabi-lang.org">packages.nabi-lang.org</a> 上。官方套件隨工具鏈提供：使用某個官方套件的程式碼在第一次建置時會自動加入它，不需要 <code>nabi add</code>。</div>
+<div class="lead-sm">標準函式庫維持精簡：語言支援、集合型別、文字、數值、時間、I/O、網路與 TLS。其餘功能都是各有獨立版本的官方套件，發布在 <a href="https://packages.nabi-lang.org">packages.nabi-lang.org</a> 上。官方套件隨工具鏈提供：程式碼用到某個官方套件時，第一次建置就會自動加入它，不需要 <code>nabi add</code>。</div>
 
 <div class="rm">
 <section class="rm-card done">

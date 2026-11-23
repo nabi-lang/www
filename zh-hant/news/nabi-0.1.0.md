@@ -2,11 +2,11 @@
 
 <!-- date: 2026-11-22 -->
 
-<div class="lead-sm">Nabi 0.1.0 是 Nabi 的第一個版本：一門編譯式語言、它的工具鏈、一個套件登錄庫，以及圍繞它們的網站。本文介紹其中包含哪些內容、在哪些平台上執行、哪些尚未完成，以及如何參與。</div>
+<div class="lead-sm">Nabi 0.1.0 是 Nabi 的第一個版本：一門編譯式語言、它的工具鏈、一個套件登錄庫，以及相關網站。本文介紹其中包含哪些內容、在哪些平台上執行、哪些尚未完成，以及如何參與。</div>
 
 ## Nabi 是什麼
 
-Nabi 是一門靜態型別的編譯式語言，具有封閉的和型別，沒有 null，錯誤寫在函式簽章中。程式是帶有垃圾回收執行環境的原生執行檔（或 WebAssembly 模組）。其設計依循[語言規格](docs:spec/index.html)中的兩條原則：精簡的核心搭配豐富的函式庫，以及清楚的規則，並在規則之內給使用者自由。型別、分派、記憶體模型與求值順序由語言一次決定；函式庫的設計、領域建模與程式碼結構則交給你。
+Nabi 是一門靜態型別的編譯式語言，具有封閉的和型別，沒有 null，錯誤寫在函式簽章中。程式是帶有垃圾回收執行環境的原生執行檔（或 WebAssembly 模組）。其設計依循[語言規格](docs:spec/index.html)中的兩條原則：精簡的核心搭配豐富的函式庫，以及清楚的規則，並在規則之內給使用者自由。型別、分派、記憶體模型與求值順序由語言統一規定；函式庫的設計、領域建模與程式碼結構則交給你。
 
 第一個程式：
 
@@ -58,7 +58,7 @@ nabi run
 
 ## 穩定性
 
-Nabi 處於 1.0 之前，對於 0.x 遵循 Cargo 對語意化版本的解讀：次版本號是破壞性變更的位置。0.2.0 可能破壞為 0.1 撰寫的程式碼；0.1.1、0.1.2 等版本新增功能與修正，但不會破壞它。在 1.0 之前，每個次版本都可能有破壞性變更。只有最新的系列會收到修正，包括安全性修正。
+Nabi 尚未進入 1.0，對於 0.x 遵循 Cargo 對語意化版本的解讀：破壞性變更以次版本號標示。0.2.0 可能破壞為 0.1 撰寫的程式碼；0.1.1、0.1.2 等版本新增功能與修正，但不會破壞它。在 1.0 之前，每個次版本都可能有破壞性變更。只有最新的系列會收到修正，包括安全性修正。
 
 ## 安裝
 
@@ -98,17 +98,17 @@ gh attestation verify nabi-0.1.0-x86_64-unknown-linux-gnu.tar.xz --repo nabi-lan
 - TLS 堆疊與 `core::crypto` 中的密碼學實作是 Nabi 自己的程式碼，已以 NIST CAVP 與 Wycheproof 測試向量測試，但尚未經過獨立稽核。請將它們視為實驗性質，暫時不要依賴它們保護真正的機密。
 - 二進位檔沒有程式碼簽署：目前既沒有 macOS 公證，也沒有 Windows Authenticode。對於用瀏覽器下載的壓縮檔，Gatekeeper 與 SmartScreen 會發出警告；`curl | sh` 與 `irm | iex` 安裝方式不受影響。目前請以上述 minisign 簽章與來源證明檢查下載的檔案。
 - 有六個目標正在進行中（見上文）。
-- 目前只有登錄庫的維護者可以發布套件。任何人都可以登入並使用套件；對於尚無法發布的帳戶，`nabi login` 會加以說明。
+- 目前只有登錄庫的維護者可以發布套件。任何人都可以登入並使用套件；若帳戶尚無法發布，`nabi login` 會提示這一點。
 - 為 `-gnu` Linux 目標建置的程式需要 glibc 2.34 以上。在較舊的系統上，安裝程式會挑選靜態 musl 壓縮檔。
 - 工具鏈的建置快取上限為 5 GiB；設定 `NABI_CACHE_MAX_SIZE`（`2G`、`off`）可以變更上限，`nabi cache prune` 或 `nabi cache clean` 可以縮減快取。
-- Nabi 目前沒有公開的效能比較。它的程式碼產生器還很年輕；請自行測量你的工作負載。
+- Nabi 目前尚未發表效能比較。它的程式碼產生器還很年輕；請以你自己的工作負載實際測量。
 
 ## 參與
 
 - 提問、點子與作品分享：[GitHub Discussions](https://github.com/nabi-lang/nabi/discussions)。
 - bug：在相關的儲存庫開 [issue](https://github.com/nabi-lang/nabi/issues)。
 - 程式碼與文件：請閱讀 [CONTRIBUTING.md](https://github.com/nabi-lang/nabi/blob/main/CONTRIBUTING.md)。每個提交都要附上 DCO 簽署（`git commit -s`）；不需要簽署 CLA。
-- 安全性問題：不要公開回報。請使用 GitHub 的私下漏洞回報功能，或寫信至 security@nabi-lang.org（[SECURITY.md](https://github.com/nabi-lang/nabi/blob/main/SECURITY.md)）。
+- 安全性問題：不要公開回報。請使用 GitHub 的私人漏洞回報功能，或寫信至 security@nabi-lang.org（[SECURITY.md](https://github.com/nabi-lang/nabi/blob/main/SECURITY.md)）。
 - 常見疑問：請見[常見問題](../faq.html)。
 
 ## 致謝

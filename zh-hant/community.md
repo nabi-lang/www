@@ -4,7 +4,7 @@
 
 ## 提問與討論
 
-[GitHub Discussions](https://github.com/nabi-lang/nabi/discussions) 是論壇：提問、點子、作品分享，以及接下來要做的設計。提問前先搜尋；那裡的回答也能幫到下一個人。
+[GitHub Discussions](https://github.com/nabi-lang/nabi/discussions) 是論壇：提問、點子、作品分享，以及後續功能的設計討論。提問前先搜尋；那裡的回答也能幫到下一個人。
 
 編譯器、工具或標準函式庫的 bug 請開一則 [issue](https://github.com/nabi-lang/nabi/issues)，附上能重現問題的程式以及 `nabi --version -v` 的輸出。文件、語言規格與網站的問題請提交到各自的儲存庫：[docs](https://github.com/nabi-lang/docs/issues)、[spec](https://github.com/nabi-lang/spec/issues)、[www](https://github.com/nabi-lang/www/issues)。
 
@@ -21,11 +21,11 @@
 
 ## 行為準則
 
-Nabi 的每個空間，從 issue 與 pull request 到 Discussions 以及上述帳戶，都遵循 [Contributor Covenant 2.1](https://github.com/nabi-lang/nabi/blob/main/CODE_OF_CONDUCT.md)。違反準則的行為請檢舉至 [conduct@nabi-lang.org](mailto:conduct@nabi-lang.org)。檢舉由維護者閱讀並予以保密。
+Nabi 的每個空間，從 issue 與 pull request 到 Discussions 以及上述帳戶，都遵循 [Contributor Covenant 2.1](https://github.com/nabi-lang/nabi/blob/main/CODE_OF_CONDUCT.md)。違反準則的行為請檢舉至 [conduct@nabi-lang.org](mailto:conduct@nabi-lang.org)。檢舉內容由維護者審閱，並予以保密。
 
 ## 參與貢獻
 
-每個儲存庫的 `CONTRIBUTING.md` 說明如何建置以及要執行哪些檢查；工具鏈的請見 [nabi-lang/nabi](https://github.com/nabi-lang/nabi/blob/main/CONTRIBUTING.md)。簡單來說：
+每個儲存庫的 `CONTRIBUTING.md` 說明如何建置以及要執行哪些檢查；工具鏈的說明請見 [nabi-lang/nabi](https://github.com/nabi-lang/nabi/blob/main/CONTRIBUTING.md)。簡單來說：
 
 - 對 `main` 開 pull request，並確保檢查通過。
 - 每個提交都要簽署（`git commit -s`）：Nabi 以 [Developer Certificate of Origin](https://developercertificate.org/) 取代 CLA。
@@ -36,7 +36,7 @@ Nabi 的每個空間，從 issue 與 pull request 到 Discussions 以及上述�
 
 ## 安全性
 
-不要在公開的 issue 中回報漏洞。請在[工具鏈儲存庫](https://github.com/nabi-lang/nabi/security/policy)使用 GitHub 的私下回報功能（**Security**，接著 **Report a vulnerability**），或寄信至 [security@nabi-lang.org](mailto:security@nabi-lang.org)。同一份政策適用於工具鏈、套件與網站。
+不要在公開的 issue 中回報漏洞。請在[工具鏈儲存庫](https://github.com/nabi-lang/nabi/security/policy)使用 GitHub 的私人漏洞回報功能（**Security**，接著 **Report a vulnerability**），或寄信至 [security@nabi-lang.org](mailto:security@nabi-lang.org)。同一份政策適用於工具鏈、套件與網站。
 
 ## 聯絡
 
