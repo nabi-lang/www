@@ -6,7 +6,7 @@
 
 Nabi 源于一个动机：用一门语言完成作者想做的所有事情。它不面向特定人群，也不为某种学术立场辩护。[语言规范](docs:spec/index.html)写明了所有设计决策最终依据的两条原则：精简的核心配上丰富的库，以及清晰的规则，并在规则之内给你自由。落到实践中，就是静态类型、封闭的和类型、没有 null、错误写在函数签名中、没有隐式数值提升，以及用垃圾回收器免去手动管理内存。
 
-如果你已经在用一门满意的语言，Nabi 并不声称要取代它。[写给 Python 开发者的 Nabi](docs:learn/nabi-for-python.html) 和[写给 Rust 开发者的 Nabi](docs:learn/nabi-for-rust.html) 展示了它在日常代码中与这两门语言的对比。
+如果你已经在用一门满意的语言，Nabi 并不声称要取代它。[写给 Python 用户的 Nabi](docs:learn/nabi-for-python.html) 和[写给 Rust 用户的 Nabi](docs:learn/nabi-for-rust.html) 展示了它在日常代码中与这两门语言的对比。
 
 ## 为什么不用 LLVM？
 
