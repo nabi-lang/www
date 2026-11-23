@@ -1,6 +1,6 @@
 # 路线图
 
-<div class="lead-sm">正在构建的内容，按发布顺序排列。一个版本在其工作完成时发布，不设日期。每一项都在 <a href="https://github.com/nabi-lang/nabi/milestones">GitHub 里程碑</a>中跟踪。</div>
+<div class="lead-sm">正在开发的内容，按发布顺序排列。每个版本在其工作完成后发布，不设日期。每一项都在 <a href="https://github.com/nabi-lang/nabi/milestones">GitHub 里程碑</a>中跟踪。</div>
 
 <div class="rm-legend"><span class="rm-pill now">进行中</span><span class="rm-pill next">下一步</span><span class="rm-pill later">以后</span><span class="rm-pill done">已发布</span></div>
 
@@ -31,7 +31,7 @@
 <header><span class="rm-pill later">以后</span></header>
 <h3>MLIR 内核</h3>
 <ul>
-<li>通过 <code>codegen-llvm</code> 组件使用 MLIR：标记的内核函数被编译用于卸载执行，程序的其余部分仍使用 Nabi 自己的代码生成器</li>
+<li>通过 <code>codegen-llvm</code> 组件使用 MLIR：标记的内核函数会被编译为卸载（offload）执行的代码，程序的其余部分仍由 Nabi 自己的代码生成器编译</li>
 </ul>
 </section>
 </div>
