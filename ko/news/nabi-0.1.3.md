@@ -22,6 +22,6 @@ nabi audit
 
 ## 레지스트리의 보안 권고
 
-보안 권고는 다른 생태계도 쓰는 [OSV](https://ossf.github.io/osv-schema/) 형식입니다. 권고마다 페이지가 있고, 해당 버전에는 배너가 붙으며, 전체 목록은 `/api/v1/advisories?format=json` API로 받을 수 있습니다. 패키지의 취약점은 먼저 그 소유자에게, 레지스트리나 툴체인의 취약점은 [security@nabi-lang.org](mailto:security@nabi-lang.org)로 알려 주세요.
+보안 권고는 다른 생태계도 쓰는 [OSV](https://ossf.github.io/osv-schema/) 형식입니다. 권고마다 페이지가 있고, 해당 버전에는 배너가 붙으며, 전체 목록은 `/api/v1/advisories?format=json` API로 받을 수 있습니다. 패키지의 취약점은 먼저 그 소유자에게, 레지스트리나 toolchain의 취약점은 [security@nabi-lang.org](mailto:security@nabi-lang.org)로 알려 주세요.
 
 자세한 내용은 가이드의 [보안 권고](docs:learn/packages/04-security-advisories.html) 페이지에, 전체 변경 목록은 [릴리스 노트](https://github.com/nabi-lang/nabi/releases/tag/v0.1.3)에 있습니다.

@@ -1,6 +1,6 @@
 # Nabi 내려받기
 
-<div class="lead-sm">Nabi {release}: 한 줄로 설치하거나, 아래에서 압축 파일을 받으세요. 툴체인은 그 자체로 완결되어 있습니다. <code>nabic</code>은 자체 코드 생성기와 링커를 갖추고 있습니다.</div>
+<div class="lead-sm">Nabi {release}: 한 줄로 설치하거나, 아래에서 압축 파일을 받으세요. toolchain은 그 자체로 완결되어 있습니다. <code>nabic</code>은 자체 코드 생성기와 링커를 갖추고 있습니다.</div>
 
 ## 설치 스크립트
 
@@ -18,7 +18,7 @@ powershell -ExecutionPolicy Bypass -c "irm https://nabi.sh/install.ps1 | iex"
 
 스크립트는 컴퓨터에 맞는 압축 파일을 골라(Windows에서는 컴퓨터의 아키텍처를 보므로, 에뮬레이션되는 x64 PowerShell에서도 arm64를 고릅니다) SHA-256을 확인한 다음 `~/.nabi`(Windows: `%USERPROFILE%\.nabi`)에 풉니다. `install.sh --version <v>`와 `install.ps1 -Version <v>`는 정확한 버전(`{release}`)으로 릴리스를 고릅니다. 지정하지 않으면 가장 새 릴리스를 받습니다.
 
-툴체인에는 공식 패키지가 함께 들어 있어서, 공식 패키지를 쓰는 코드는 네트워크 없이 빌드됩니다. 빼고 설치하려면 `curl -fsSL https://nabi.sh | sh -s -- --no-packages`를 쓰거나, 어느 스크립트든 실행하기 전에 `NABI_NO_PACKAGES=1`을 설정하세요(파일로 실행할 때는 `install.ps1 -NoPackages`). 이 옵션은 설치가 끝난 뒤 `nabi component remove packages`를 실행합니다.
+toolchain에는 공식 패키지가 함께 들어 있어서, 공식 패키지를 쓰는 코드는 네트워크 없이 빌드됩니다. 빼고 설치하려면 `curl -fsSL https://nabi.sh | sh -s -- --no-packages`를 쓰거나, 어느 스크립트든 실행하기 전에 `NABI_NO_PACKAGES=1`을 설정하세요(파일로 실행할 때는 `install.ps1 -NoPackages`). 이 옵션은 설치가 끝난 뒤 `nabi component remove packages`를 실행합니다.
 
 ## 압축 파일
 
@@ -82,7 +82,7 @@ gh attestation verify nabi-{release}-aarch64-apple-darwin.tar.xz --repo nabi-lan
 
 ## 플랫폼
 
-대상은 실제 환경에서 테스트를 통과해야 지원 대상이 됩니다. 호스트는 툴체인이 돌아가는 곳으로, 릴리스 압축 파일이 있습니다. 빌드 대상은 `nabi build --target <triple>`이 컴파일하는 대상입니다.
+대상은 실제 환경에서 테스트를 통과해야 지원 대상이 됩니다. 호스트는 toolchain이 돌아가는 곳으로, 릴리스 압축 파일이 있습니다. 빌드 대상은 `nabi build --target <triple>`이 컴파일하는 대상입니다.
 
 | 호스트 | triple | 단계 |
 |------|--------|------|

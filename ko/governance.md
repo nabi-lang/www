@@ -4,7 +4,7 @@
 
 ## 누가 정하나
 
-Nabi의 메인테이너는 BDFL([@miniex](https://github.com/miniex)) 한 사람이며, 언어와 툴체인, 릴리스마다 담을 것을 최종적으로 정합니다. 검토는 nabi-lang 조직의 영역별 팀이 나누어 맡습니다. 지금은 BDFL이 모든 팀의 유일한 구성원이고, 기여자가 한 영역을 맡게 되면 그 팀에 초대합니다. 팀이 커지면 팀의 영역 안 변경은 lazy consensus로 정합니다. 일주일 안에 반대하는 구성원이 없으면 제안이 받아들여집니다. BDFL의 스튜디오인 [DaminStudio](https://daminstudio.com)는 인프라를 운영하며, 기술적인 문제에는 관여하지 않습니다. 전체 규칙과 앞으로 바뀔 방향은 [GOVERNANCE.md](https://github.com/nabi-lang/.github/blob/main/GOVERNANCE.md)에 있습니다.
+Nabi의 메인테이너는 BDFL([@miniex](https://github.com/miniex)) 한 사람이며, 언어와 toolchain, 릴리스마다 담을 것을 최종적으로 정합니다. 검토는 nabi-lang 조직의 영역별 팀이 나누어 맡습니다. 지금은 BDFL이 모든 팀의 유일한 구성원이고, 기여자가 한 영역을 맡게 되면 그 팀에 초대합니다. 팀이 커지면 팀의 영역 안 변경은 lazy consensus로 정합니다. 일주일 안에 반대하는 구성원이 없으면 제안이 받아들여집니다. BDFL의 스튜디오인 [DaminStudio](https://daminstudio.com)는 인프라를 운영하며, 기술적인 문제에는 관여하지 않습니다. 전체 규칙과 앞으로 바뀔 방향은 [GOVERNANCE.md](https://github.com/nabi-lang/.github/blob/main/GOVERNANCE.md)에 있습니다.
 
 ## 변경이 들어가는 길
 
@@ -20,4 +20,4 @@ Nabi의 메인테이너는 BDFL([@miniex](https://github.com/miniex)) 한 사람
 
 ## 패키지
 
-공식 패키지는 [nabi-lang](https://github.com/nabi-lang) 조직에서 내며, 툴체인처럼 유지합니다. [packages.nabi-lang.org](https://packages.nabi-lang.org)의 다른 패키지는 각 소유자의 것입니다. 레지스트리가 무엇을 받고 패키지를 어떻게 내리는지는 [이용 정책](https://packages.nabi-lang.org/policy)에 있습니다.
+공식 패키지는 [nabi-lang](https://github.com/nabi-lang) 조직에서 내며, toolchain처럼 유지합니다. [packages.nabi-lang.org](https://packages.nabi-lang.org)의 다른 패키지는 각 소유자의 것입니다. 레지스트리가 무엇을 받고 패키지를 어떻게 내리는지는 [이용 정책](https://packages.nabi-lang.org/policy)에 있습니다.

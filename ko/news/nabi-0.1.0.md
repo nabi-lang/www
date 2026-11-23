@@ -2,7 +2,7 @@
 
 <!-- date: 2026-11-22 -->
 
-<div class="lead-sm">Nabi 0.1.0은 Nabi의 첫 릴리스입니다. 컴파일 언어와 그 툴체인, 패키지 레지스트리, 그리고 이를 둘러싼 사이트가 함께 나옵니다. 이 글은 무엇이 들어 있는지, 어디서 돌아가는지, 아직 안 된 것은 무엇인지, 어떻게 참여하는지를 적습니다.</div>
+<div class="lead-sm">Nabi 0.1.0은 Nabi의 첫 릴리스입니다. 컴파일 언어와 그 toolchain, 패키지 레지스트리, 그리고 이를 둘러싼 사이트가 함께 나옵니다. 이 글은 무엇이 들어 있는지, 어디서 돌아가는지, 아직 안 된 것은 무엇인지, 어떻게 참여하는지를 적습니다.</div>
 
 ## Nabi는
 
@@ -23,14 +23,14 @@ nabi run
 - 언어 서버 `nabils`, REPL(`nabi repl`), Jupyter 커널(`nabi jupyter install`).
 - 스레드와 함께 동작하는 세대별 이동 가비지 컬렉터와 비동기 태스크를 갖춘 런타임.
 - `bare`, `core`, `std` 세 계층의 표준 라이브러리: 컬렉션, 텍스트, 숫자, 시간, 파일, 프로세스, 네트워킹과 TLS. API는 [docs.nabi-lang.org](docs:std/index.html)에 있습니다.
-- 패키지 레지스트리 [packages.nabi-lang.org](https://packages.nabi-lang.org)와 공식 패키지 20개: `autodiff`, `csv`, `http`, `interpolate`, `json`, `linalg`, `markdown`, `nabi-syntax`, `ode`, `optimize`, `plot`, `regex`, `signal`, `sparse`, `spatial`, `special`, `stats`, `table`, `toml`, `units`. 툴체인과 함께 설치되며, 공식 패키지를 쓰는 코드는 처음 쓸 때 네트워크 없이 매니페스트에 추가됩니다.
+- 패키지 레지스트리 [packages.nabi-lang.org](https://packages.nabi-lang.org)와 공식 패키지 20개: `autodiff`, `csv`, `http`, `interpolate`, `json`, `linalg`, `markdown`, `nabi-syntax`, `ode`, `optimize`, `plot`, `regex`, `signal`, `sparse`, `spatial`, `special`, `stats`, `table`, `toml`, `units`. toolchain과 함께 설치되며, 공식 패키지를 쓰는 코드는 처음 쓸 때 네트워크 없이 매니페스트에 추가됩니다.
 - `nabils`를 쓰는 에디터 지원: [VS Code](https://github.com/nabi-lang/nabi.vscode), [Vim](https://github.com/nabi-lang/nabi.vim), [Zed](https://github.com/nabi-lang/nabi.zed).
 - 프로그램을 WebAssembly로 컴파일해 브라우저에서 실행하는 [플레이그라운드](https://playground.nabi-lang.org).
 - 문서: 가이드, 예제, 언어와 표준 라이브러리 사양, 표준 라이브러리 API, 에러 코드마다 한 페이지. 영어와 한국어로 제공합니다.
 
 ## 플랫폼
 
-툴체인은 호스트 8곳에서 돌아가며, 호스트마다 릴리스 압축 파일이 하나씩 있습니다.
+toolchain은 호스트 8곳에서 돌아가며, 호스트마다 릴리스 압축 파일이 하나씩 있습니다.
 
 | 호스트 | triple |
 |------|--------|
@@ -100,7 +100,7 @@ gh attestation verify nabi-0.1.0-x86_64-unknown-linux-gnu.tar.xz --repo nabi-lan
 - 대상 6개는 진행 중입니다(위 참고).
 - 지금은 레지스트리 관리자만 패키지를 공개할 수 있습니다. 누구나 로그인해 패키지를 쓸 수 있으며, 아직 공개할 수 없는 계정에는 `nabi login`이 그렇다고 알려 줍니다.
 - `-gnu` Linux 대상용으로 빌드한 프로그램에는 glibc 2.34 이상이 필요합니다. 더 오래된 시스템에서는 설치 스크립트가 정적 musl 압축 파일을 고릅니다.
-- 툴체인의 빌드 캐시는 5 GiB로 제한됩니다. `NABI_CACHE_MAX_SIZE`(`2G`, `off`)로 바꾸고, `nabi cache prune`이나 `nabi cache clean`으로 줄이세요.
+- toolchain의 빌드 캐시는 5 GiB로 제한됩니다. `NABI_CACHE_MAX_SIZE`(`2G`, `off`)로 바꾸고, `nabi cache prune`이나 `nabi cache clean`으로 줄이세요.
 - 공개된 성능 비교는 아직 없습니다. 코드 생성기는 아직 젊으니, 직접 쓰는 작업으로 측정해 보세요.
 
 ## 참여하기
@@ -113,4 +113,4 @@ gh attestation verify nabi-0.1.0-x86_64-unknown-linux-gnu.tar.xz --repo nabi-lan
 
 ## 감사의 말
 
-초기 빌드를 써 보고, 문제를 알려 주고, 문서 초안을 읽어 준 모든 분께 감사드립니다. Nabi가 배우고 기대어 만든 프로젝트들에도 감사드립니다. Nabi를 작성한 Rust 툴체인, musl, wasi-libc, mingw-w64, 그리고 [THIRD-PARTY-NOTICES](https://github.com/nabi-lang/nabi/blob/main/THIRD-PARTY-NOTICES)에 적힌 다른 프로젝트들입니다.
+초기 빌드를 써 보고, 문제를 알려 주고, 문서 초안을 읽어 준 모든 분께 감사드립니다. Nabi가 배우고 기대어 만든 프로젝트들에도 감사드립니다. Nabi를 작성한 Rust toolchain, musl, wasi-libc, mingw-w64, 그리고 [THIRD-PARTY-NOTICES](https://github.com/nabi-lang/nabi/blob/main/THIRD-PARTY-NOTICES)에 적힌 다른 프로젝트들입니다.

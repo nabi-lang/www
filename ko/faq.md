@@ -10,7 +10,7 @@ Nabi는 한 가지 동기에서 시작했습니다. 만든 사람이 하고 싶�
 
 ## 왜 LLVM을 쓰지 않나요?
 
-압축 파일 하나가 툴체인 전부가 되도록 하기 위해서입니다. `nabic`은 기계어를 직접 생성하고 직접 링크하며, 압축 파일마다 모든 지원 대상의 런타임이 들어 있습니다. 그래서 `nabi build --target <triple>`은 시스템 링커도, C 컴파일러도, SDK도 설치하지 않고 어느 호스트에서든 교차 컴파일합니다(Apple 대상에는 여전히 Apple의 SDK가, Android 대상에는 NDK가 필요합니다). 컴파일러, 링커, 런타임을 한 코드베이스에 두어 프로젝트가 함께 바꿀 수 있다는 점도 있습니다.
+압축 파일 하나가 toolchain 전부가 되도록 하기 위해서입니다. `nabic`은 기계어를 직접 생성하고 직접 링크하며, 압축 파일마다 모든 지원 대상의 런타임이 들어 있습니다. 그래서 `nabi build --target <triple>`은 시스템 링커도, C 컴파일러도, SDK도 설치하지 않고 어느 호스트에서든 교차 컴파일합니다(Apple 대상에는 여전히 Apple의 SDK가, Android 대상에는 NDK가 필요합니다). 컴파일러, 링커, 런타임을 한 코드베이스에 두어 프로젝트가 함께 바꿀 수 있다는 점도 있습니다.
 
 대가는 아직 젊은 코드 생성기입니다. Nabi는 LLVM 기반 컴파일러와의 성능 비교를 아직 공개하지 않았습니다. 직접 쓰는 작업으로 측정해 보세요. 컴포넌트로 설치하고 프로필마다 고르는 선택적 LLVM 백엔드가 0.2 계열에 계획되어 있으며([로드맵](roadmap.html)), 기본값은 계속 Nabi의 자체 코드 생성기입니다.
 
@@ -22,7 +22,7 @@ Nabi는 한 가지 동기에서 시작했습니다. 만든 사람이 하고 싶�
 
 ## 어떤 플랫폼을 지원하나요?
 
-툴체인은 호스트 8곳에서 돌아갑니다. Apple 실리콘 macOS, x64와 arm64의 Windows 11, x64와 arm64의 Linux(glibc 2.34 이상 또는 정적 musl), x64의 FreeBSD 14 이상입니다. 지원 빌드 대상은 17개로, 여기에 32비트 x86 Linux와 Windows, 32비트 ARM Linux, WebAssembly 대상 셋, Android x86-64, iOS 시뮬레이터가 더해집니다. 대상 6개(Android와 iOS 기기, riscv64, ppc64le, s390x, 임베디드 RISC-V)는 진행 중이며, 실제 하드웨어에서 돌아갈 때까지 `--target`이 받지 않습니다. 전체 표는 [내려받기 페이지](download.html#플랫폼)에 있습니다.
+toolchain은 호스트 8곳에서 돌아갑니다. Apple 실리콘 macOS, x64와 arm64의 Windows 11, x64와 arm64의 Linux(glibc 2.34 이상 또는 정적 musl), x64의 FreeBSD 14 이상입니다. 지원 빌드 대상은 17개로, 여기에 32비트 x86 Linux와 Windows, 32비트 ARM Linux, WebAssembly 대상 셋, Android x86-64, iOS 시뮬레이터가 더해집니다. 대상 6개(Android와 iOS 기기, riscv64, ppc64le, s390x, 임베디드 RISC-V)는 진행 중이며, 실제 하드웨어에서 돌아갈 때까지 `--target`이 받지 않습니다. 전체 표는 [내려받기 페이지](download.html#플랫폼)에 있습니다.
 
 Intel Mac, 32비트 호스트, arm64 FreeBSD는 지원하지 않습니다.
 
@@ -30,7 +30,7 @@ Intel Mac, 32비트 호스트, arm64 FreeBSD는 지원하지 않습니다.
 
 패키지는 `nabi.nabion` 매니페스트가 있는 디렉터리입니다. `nabi add <이름>`은 [packages.nabi-lang.org](https://packages.nabi-lang.org)에서 의존성을 추가하고, `nabi.lock`은 정확한 버전을 기록하며, `nabi update`는 그 버전을 올립니다. 레지스트리의 인덱스는 git 저장소 [nabi-lang/packages-index](https://github.com/nabi-lang/packages-index)입니다. 버전마다 패키지 저장소의 커밋을 가리키고, 레지스트리는 그 커밋의 압축 파일을 SHA-256과 함께 보관하며, `nabi`는 내려받을 때 이를 확인합니다.
 
-공식 패키지 20개(`json`, `http`, `regex`, `table`, `stats`, `plot` 등)는 툴체인과 함께 설치됩니다. 공식 패키지를 쓰는 코드는 처음 쓸 때 `nabi add`도 네트워크도 없이 매니페스트에 추가됩니다.
+공식 패키지 20개(`json`, `http`, `regex`, `table`, `stats`, `plot` 등)는 toolchain과 함께 설치됩니다. 공식 패키지를 쓰는 코드는 처음 쓸 때 `nabi add`도 네트워크도 없이 매니페스트에 추가됩니다.
 
 `nabi publish`는 버전을 레지스트리에 보냅니다. 지금은 레지스트리 관리자만 공개할 수 있으며, 누구나 로그인해 패키지를 쓸 수 있습니다. [패키지 공개](docs:learn/18-features-and-publishing.html#패키지-공개하기)를 보세요.
 

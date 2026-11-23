@@ -38,4 +38,4 @@
 | 세로 워드마크, 밝은 바탕용 | [nabi-vertical-light.svg](../brand/nabi-vertical-light.svg) | [576 x 1024](../brand/nabi-vertical-light.png) |
 | 세로 워드마크, 어두운 바탕용 | [nabi-vertical-dark.svg](../brand/nabi-vertical-dark.svg) | [576 x 1024](../brand/nabi-vertical-dark.png) |
 
-플랫폼별 아이콘을 포함한 모든 마크의 원본은 툴체인 저장소의 [assets/](https://github.com/nabi-lang/nabi/tree/main/assets)에 있습니다.
+플랫폼별 아이콘을 포함한 모든 마크의 원본은 toolchain 저장소의 [assets/](https://github.com/nabi-lang/nabi/tree/main/assets)에 있습니다.
