@@ -32,7 +32,7 @@ Nabi 源于一个动机：用一门语言完成作者想做的所有事情。它
 
 20 个官方包（`json`、`http`、`regex`、`table`、`stats`、`plot` 等）随工具链提供。使用某个官方包的代码在首次使用时会自动把它加入清单，无需 `nabi add`，也无需联网。
 
-`nabi publish` 把一个版本发送到注册表。目前只有注册表的维护者可以发布；任何人都可以登录并使用包。见[发布包](docs:learn/18-features-and-publishing.html#publishing-a-package)。
+`nabi publish` 把一个版本发送到注册表。目前只有注册表的维护者可以发布；任何人都可以登录并使用包。见[发布包](docs:learn/18-features-and-publishing.html#发布包)。
 
 ## 许可证是什么？
 

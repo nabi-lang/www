@@ -32,7 +32,7 @@ Nabi 源自一個動機：用一門語言做到作者想做的所有事。它不
 
 20 個官方套件（`json`、`http`、`regex`、`table`、`stats`、`plot` 等）隨工具鏈提供。使用某個官方套件的程式碼在第一次使用時會自動將它加入清單，不需要 `nabi add`，也不需要網路。
 
-`nabi publish` 將一個版本送到登錄庫。目前只有登錄庫的維護者可以發布；任何人都可以登入並使用套件。請見[發布套件](docs:learn/18-features-and-publishing.html#publishing-a-package)。
+`nabi publish` 將一個版本送到登錄庫。目前只有登錄庫的維護者可以發布；任何人都可以登入並使用套件。請見[發布套件](docs:learn/18-features-and-publishing.html#發布套件)。
 
 ## 授權條款是什麼？
 
