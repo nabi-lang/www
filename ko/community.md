@@ -6,7 +6,7 @@
 
 포럼은 [GitHub Discussions](https://github.com/nabi-lang/nabi/discussions)입니다. 질문, 아이디어, 만든 것 소개, 다음에 올 기능의 설계를 여기서 이야기합니다. 묻기 전에 먼저 검색해 보세요. 거기 남은 답은 다음 사람에게도 도움이 됩니다.
 
-컴파일러, 도구, 표준 라이브러리의 버그는 [이슈](https://github.com/nabi-lang/nabi/issues)로 올립니다. 문제를 보여 주는 프로그램과 `nabi --version`의 출력을 함께 적어 주세요. 문서, 사양, 사이트의 이슈는 각 저장소에 올립니다. [docs](https://github.com/nabi-lang/docs/issues), [spec](https://github.com/nabi-lang/spec/issues), [www](https://github.com/nabi-lang/www/issues).
+컴파일러, 도구, 표준 라이브러리의 버그는 [이슈](https://github.com/nabi-lang/nabi/issues)로 올립니다. 문제를 보여 주는 프로그램과 `nabi --version -v`의 출력을 함께 적어 주세요. 문서, 사양, 사이트의 이슈는 각 저장소에 올립니다. [docs](https://github.com/nabi-lang/docs/issues), [spec](https://github.com/nabi-lang/spec/issues), [www](https://github.com/nabi-lang/www/issues).
 
 채팅 서버는 없습니다. Discussions에 남은 답은 다음 사람이 찾을 수 있습니다.
 
@@ -29,7 +29,7 @@
 
 - 검사를 통과한 풀 리퀘스트를 `main`에 엽니다.
 - 커밋마다 서명합니다(`git commit -s`). Nabi는 CLA 대신 [Developer Certificate of Origin](https://developercertificate.org/)을 씁니다.
-- 겉으로 드러나는 동작을 바꾸면 [사양](https://github.com/nabi-lang/spec)의 영어판과 한국어판을 같은 변경에서 함께 고칩니다.
+- 겉으로 드러나는 동작을 바꾸면 [사양](https://github.com/nabi-lang/spec)의 영어판, 한국어판, 중국어 간체판, 중국어 번체판 네 판을 같은 변경에서 함께 고칩니다.
 - 툴체인 풀 리퀘스트는 `changelog:` 블록으로 끝냅니다. `CHANGELOG.md`는 릴리스 때 만듭니다.
 
 코드는 `MIT OR Apache-2.0`, 사양과 문서와 이 사이트의 글은 CC BY 4.0입니다. 결정을 어떻게 내리는지는 [운영](governance.html) 페이지에 있습니다.

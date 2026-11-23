@@ -6,7 +6,7 @@
 
 [GitHub Discussions](https://github.com/nabi-lang/nabi/discussions) 是论坛：提问、想法、作品展示，以及接下来要做的设计。提问前先搜索一下；那里的回答也能帮到下一个人。
 
-编译器、工具或标准库的 bug 请提交 [issue](https://github.com/nabi-lang/nabi/issues)，附上能复现问题的程序以及 `nabi --version` 的输出。文档、语言规范和网站的问题提交到各自的仓库：[docs](https://github.com/nabi-lang/docs/issues)、[spec](https://github.com/nabi-lang/spec/issues)、[www](https://github.com/nabi-lang/www/issues)。
+编译器、工具或标准库的 bug 请提交 [issue](https://github.com/nabi-lang/nabi/issues)，附上能复现问题的程序以及 `nabi --version -v` 的输出。文档、语言规范和网站的问题提交到各自的仓库：[docs](https://github.com/nabi-lang/docs/issues)、[spec](https://github.com/nabi-lang/spec/issues)、[www](https://github.com/nabi-lang/www/issues)。
 
 没有聊天服务器。Discussions 让回答留在下一个人能找到的地方。
 
@@ -29,7 +29,7 @@ Nabi 的每个空间，从 issue 和 pull request 到 Discussions 以及上面�
 
 - 向 `main` 提交 pull request，并确保检查通过。
 - 每个提交都要签署（`git commit -s`）：Nabi 用 [Developer Certificate of Origin](https://developercertificate.org/) 代替 CLA。
-- 改变可观察行为的变更，要在同一个变更中更新[语言规范](https://github.com/nabi-lang/spec)的英文版和韩文版。
+- 改变可观察行为的变更，要在同一个变更中更新[语言规范](https://github.com/nabi-lang/spec)的全部四个版本：英文、韩文、简体中文和繁体中文。
 - 工具链的 pull request 以 `changelog:` 块结尾；`CHANGELOG.md` 本身在发布时编写。
 
 代码采用 `MIT OR Apache-2.0`；语言规范、文档和本站的文字采用 CC BY 4.0。决策如何做出见[治理](governance.html)页面。

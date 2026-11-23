@@ -4,12 +4,12 @@
 
 ## Who decides
 
-[DaminStudio](https://daminstudio.com) started Nabi and maintains it: its maintainers review and merge changes, decide what each release holds, and cut the releases. There is no foundation, steering group or RFC process yet. If Nabi grows a wider group of maintainers, this page will say so and how they are chosen.
+Nabi has one maintainer, its BDFL ([@miniex](https://github.com/miniex)), who has the final say on the language, the toolchain and what each release holds. Review is split by area among teams of the nabi-lang organization; today the BDFL is the only member of each, and contributors are invited as they take on an area. As teams grow, they decide the changes in their scope by lazy consensus: a proposal stands if no member objects within a week. [DaminStudio](https://daminstudio.com), the BDFL's studio, hosts the infrastructure and has no say in technical questions. The full rules, and how they are meant to change, are in [GOVERNANCE.md](https://github.com/nabi-lang/.github/blob/main/GOVERNANCE.md).
 
 ## How a change gets in
 
 - Bugs and small changes: an [issue](https://github.com/nabi-lang/nabi/issues), or a pull request directly.
-- Changes to the language or the standard library: start in [GitHub Discussions](https://github.com/nabi-lang/nabi/discussions) or an issue, so the design is settled before the code. The [specification](https://github.com/nabi-lang/spec) defines the language; a change in observable behavior updates it in English and Korean in the same change.
+- Changes to the language or the standard library: start in [GitHub Discussions](https://github.com/nabi-lang/nabi/discussions) or an issue, so the design is settled before the code. The [specification](https://github.com/nabi-lang/spec) defines the language; a change in observable behavior updates it in all four editions (English, Korean, Simplified and Traditional Chinese) in the same change.
 - Every pull request passes the repository's checks and carries a DCO sign-off; [Community](community.html#contributing) has the details.
 
 The reasons behind a decision are written where it is made: in the issue, the discussion or the pull request.

@@ -6,7 +6,7 @@
 
 [GitHub Discussions](https://github.com/nabi-lang/nabi/discussions) is the forum: questions, ideas, show and tell, and the design of what comes next. Search it before you ask; an answer there helps the next person too.
 
-A bug in the compiler, the tools or the standard library goes in an [issue](https://github.com/nabi-lang/nabi/issues), with the program that shows it and what `nabi --version` prints. Docs, spec and site issues go to their own repositories: [docs](https://github.com/nabi-lang/docs/issues), [spec](https://github.com/nabi-lang/spec/issues), [www](https://github.com/nabi-lang/www/issues).
+A bug in the compiler, the tools or the standard library goes in an [issue](https://github.com/nabi-lang/nabi/issues), with the program that shows it and what `nabi --version -v` prints. Docs, spec and site issues go to their own repositories: [docs](https://github.com/nabi-lang/docs/issues), [spec](https://github.com/nabi-lang/spec/issues), [www](https://github.com/nabi-lang/www/issues).
 
 There is no chat server. Discussions keeps answers where the next person can find them.
 
@@ -29,7 +29,7 @@ Each repository's `CONTRIBUTING.md` says how to build it and which checks to run
 
 - Open a pull request against `main` with the checks passing.
 - Sign off every commit (`git commit -s`): Nabi uses the [Developer Certificate of Origin](https://developercertificate.org/) instead of a CLA.
-- A change in observable behavior updates the [spec](https://github.com/nabi-lang/spec) in both editions, English and Korean, in the same change.
+- A change in observable behavior updates the [spec](https://github.com/nabi-lang/spec) in all four editions, English, Korean, Simplified and Traditional Chinese, in the same change.
 - A toolchain pull request ends with a `changelog:` block; `CHANGELOG.md` itself is written at release time.
 
 Code is `MIT OR Apache-2.0`; the spec, the docs and this site's text are CC BY 4.0. How decisions are made is on the [governance](governance.html) page.

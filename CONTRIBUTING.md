@@ -1,16 +1,22 @@
 # Contributing to the nabi-lang.org pages
 
 This repository holds the pages of nabi-lang.org that do not change with a
-release (home, download, roadmap), in English and Korean (`ko/`). It is
-content only; the site is built by
+release (home, download, roadmap, FAQ, community, governance, brand,
+privacy notice, terms of use, news), in four editions: English, Korean
+(`ko/`), Simplified Chinese (`zh-hans/`) and Traditional Chinese
+(`zh-hant/`). It is content only; the site is built by
 [nabi-lang.org](https://github.com/nabi-lang/nabi-lang.org). Only `main` is
 served.
 
 ## Keeping the editions in sync
 
-A change to an English page is made to its Korean page under `ko/` in the
-same pull request, with the same headings. If you cannot write the Korean,
-say so in the pull request and a maintainer will add it before merging.
+A change to an English page is made to its Korean, Simplified Chinese and
+Traditional Chinese pages (`ko/`, `zh-hans/`, `zh-hant/`) in the same pull
+request, with the same headings. zh-hans uses mainland terms and zh-hant
+Taiwan terms, as the
+[glossary](https://github.com/nabi-lang/docs/blob/main/i18n/glossary-zh.md)
+lists them. If you cannot write an edition, say so in the pull request and
+a maintainer will add it before merging.
 
 ## Checks
 

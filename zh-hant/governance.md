@@ -4,12 +4,12 @@
 
 ## 由誰決定
 
-[DaminStudio](https://daminstudio.com) 創立並維護 Nabi：其維護者審查並合併變更、決定每個版本包含的內容，並負責發行。目前還沒有基金會、指導小組或 RFC 流程。若 Nabi 發展出更廣泛的維護者群體，本頁會說明這一點以及他們如何產生。
+Nabi 目前只有一位維護者，即其 BDFL（[@miniex](https://github.com/miniex)），由他對語言、工具鏈以及每個版本包含的內容做最終決定。審查依領域分給 nabi-lang 組織的各個團隊；目前 BDFL 是每個團隊唯一的成員，貢獻者承擔某個領域後會受邀加入相應團隊。團隊擴大後，團隊範圍內的變更以 lazy consensus 決定：一項提議若在一週內無成員反對即成立。BDFL 的工作室 [DaminStudio](https://daminstudio.com) 負責託管基礎設施，不參與技術問題的決策。完整的規則及其日後的演變方式請見 [GOVERNANCE.md](https://github.com/nabi-lang/.github/blob/main/GOVERNANCE.md)。
 
 ## 變更如何被接受
 
 - bug 與小幅修改：開一則 [issue](https://github.com/nabi-lang/nabi/issues)，或直接開 pull request。
-- 語言或標準函式庫的變更：先在 [GitHub Discussions](https://github.com/nabi-lang/nabi/discussions) 或 issue 中討論，在撰寫程式碼之前確定設計。[語言規格](https://github.com/nabi-lang/spec)定義了這門語言；改變可觀察行為的變更，要在同一個變更中更新其英文版與韓文版。
+- 語言或標準函式庫的變更：先在 [GitHub Discussions](https://github.com/nabi-lang/nabi/discussions) 或 issue 中討論，在撰寫程式碼之前確定設計。[語言規格](https://github.com/nabi-lang/spec)定義了這門語言；改變可觀察行為的變更，要在同一個變更中更新其全部四個版本（英文、韓文、簡體中文與繁體中文）。
 - 每個 pull request 都要通過儲存庫的檢查並附上 DCO 簽署；詳情請見[社群](community.html#參與貢獻)。
 
 決策背後的理由記錄在做出決策的地方：issue、討論或 pull request 中。

@@ -6,7 +6,7 @@
 
 ## Checklist
 
-- [ ] The English page and its Korean page under `ko/` are changed together (or this says which half is missing)
+- [ ] The English page and its `ko/`, `zh-hans/` and `zh-hant/` pages are changed together (or this says which edition is missing)
 - [ ] The content check passes (see CONTRIBUTING.md)
 - [ ] Examples run as written
 - [ ] Every commit is signed off (`git commit -s`, see CONTRIBUTING.md)

@@ -6,7 +6,7 @@
 
 在正文和标题中写作 **Nabi**，首字母 N 大写。小写的 `nabi` 是命令，也是代码、包名、文件名和地址中的写法（`nabi run`、`nabi-lang.org`）。不要写作 NABI 或 Nabi-lang。*Nabi*（나비）在韩语中意为“蝴蝶”。
 
-标语是 *Clear rules, free as a butterfly.*（韩语：*규칙은 분명하게, 나비처럼 자유롭게.*；意为“规则清晰，如蝴蝶般自由。”）。
+标语是 *规则清晰，如蝶般自由。*（英文：*Clear rules, free as a butterfly.*）。
 
 ## 使用名称和标志
 

@@ -6,7 +6,7 @@
 
 在內文與標題中寫作 **Nabi**，首字母 N 大寫。小寫的 `nabi` 是指令，也是程式碼、套件名稱、檔案名稱與網址中的寫法（`nabi run`、`nabi-lang.org`）。不要寫作 NABI 或 Nabi-lang。*Nabi*（나비）在韓語中是「蝴蝶」的意思。
 
-標語是 *Clear rules, free as a butterfly.*（韓語：*규칙은 분명하게, 나비처럼 자유롭게.*；意思是「規則清楚，如蝴蝶般自由。」）。
+標語是 *規則清晰，如蝶般自由。*（英文：*Clear rules, free as a butterfly.*）。
 
 ## 使用名稱與標誌
 
