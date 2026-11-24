@@ -13,9 +13,16 @@
 `..`는 이제 모든 튜플과 튜플 구조체 패턴에서 `match`, `if let`, `let` 모두에 쓸 수 있습니다.
 
 ```nabi
-match pair {
-    (0, ..) => println("starts at zero"),
-    (h, ..rest) => println(f"{h} then {rest:?}"),
+fn describe(t: (i32, i32, i32)) {
+    match t {
+        (0, ..) => println("starts at zero"),
+        (h, ..rest) => println(f"{h} then {rest:?}"),
+    }
+}
+
+fn main() {
+    describe((0, 1, 2));
+    describe((7, 8, 9)); // 7 then (8, 9)
 }
 ```
 

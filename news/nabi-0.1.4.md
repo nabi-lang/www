@@ -13,9 +13,16 @@ Code written the way another language would have it now gets an error that names
 `..` works in every tuple and tuple struct pattern, in `match`, `if let` and `let`:
 
 ```nabi
-match pair {
-    (0, ..) => println("starts at zero"),
-    (h, ..rest) => println(f"{h} then {rest:?}"),
+fn describe(t: (i32, i32, i32)) {
+    match t {
+        (0, ..) => println("starts at zero"),
+        (h, ..rest) => println(f"{h} then {rest:?}"),
+    }
+}
+
+fn main() {
+    describe((0, 1, 2));
+    describe((7, 8, 9)); // 7 then (8, 9)
 }
 ```
 
