@@ -39,6 +39,7 @@
 ## 已發布
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.5</span><time datetime="2026-11-24">2026-11-24</time><p>修正版本：因 0.1.4 的回歸而無法建置的 <code>table</code> 套件及相依於它的專案恢復建置。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.5">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.4</span><time datetime="2026-11-24">2026-11-24</time><p>修正模式與推斷，沿用其他語言習慣的寫法會得到說明應改寫成什麼的錯誤。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.4">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code> 以登錄庫的安全性公告檢查 <code>nabi.lock</code> 中鎖定的套件。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-11-22">2026-11-22</time><p>修正版本：型別經過 <code>any</code> 的套件（例如 <code>spatial</code> 與 <code>sparse</code>）又能作為相依套件正常建置。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.2">發行說明</a></p></div>
