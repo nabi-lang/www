@@ -39,6 +39,7 @@
 ## 已发布
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.4</span><time datetime="2026-11-24">2026-11-24</time><p>修复模式和推断，来自其他语言习惯的写法会得到说明应改写成什么的错误。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.4">发布说明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code> 用注册表的安全公告检查 <code>nabi.lock</code> 中锁定的包。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">发布说明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-11-22">2026-11-22</time><p>修复版本：类型经过 <code>any</code> 的包（如 <code>spatial</code> 和 <code>sparse</code>）再次可以作为依赖构建。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.2">发布说明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.1</span><time datetime="2026-11-22">2026-11-22</time><p>修复版本：每个包只能看到自己的依赖，工具链附带更新后的官方包。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.1">发布说明</a></p></div>

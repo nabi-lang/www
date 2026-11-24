@@ -39,6 +39,7 @@
 ## 출시됨
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.4</span><time datetime="2026-11-24">2026-11-24</time><p>패턴과 추론을 고치고, 다른 언어의 습관에서 나온 코드에 무엇을 대신 쓸지 알려 주는 오류를 냅니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.4">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code>가 <code>nabi.lock</code>에 고정된 패키지를 레지스트리의 보안 권고와 대조합니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-11-22">2026-11-22</time><p>수정 릴리스입니다. <code>spatial</code>과 <code>sparse</code>처럼 타입이 <code>any</code>를 거치는 패키지가 다시 의존성으로 빌드됩니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.2">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.1</span><time datetime="2026-11-22">2026-11-22</time><p>수정 릴리스입니다. 각 패키지는 자기 의존성만 보고, toolchain은 갱신된 공식 패키지를 담습니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.1">릴리스 노트</a></p></div>
