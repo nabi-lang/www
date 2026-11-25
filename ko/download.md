@@ -20,6 +20,23 @@ powershell -ExecutionPolicy Bypass -c "irm https://nabi.sh/install.ps1 | iex"
 
 toolchain에는 공식 패키지가 함께 들어 있어서, 공식 패키지를 쓰는 코드는 네트워크 없이 빌드됩니다. 빼고 설치하려면 `curl -fsSL https://nabi.sh | sh -s -- --no-packages`를 쓰거나, 어느 스크립트든 실행하기 전에 `NABI_NO_PACKAGES=1`을 설정하세요(파일로 실행할 때는 `install.ps1 -NoPackages`). 이 옵션은 설치가 끝난 뒤 `nabi component remove packages`를 실행합니다.
 
+## GitHub가 느리거나 막혀 있을 때
+
+릴리스는 GitHub에서 내려받습니다. `dist.nabi-lang.org`는 모든 릴리스를 같은 구조로 미러링하므로, `NABI_DIST`를 설정하면 대신 그곳에서 받습니다.
+
+```sh
+curl -fsSL https://nabi.sh | NABI_DIST=https://dist.nabi-lang.org sh
+```
+
+PowerShell에서:
+
+```powershell
+$env:NABI_DIST = "https://dist.nabi-lang.org"
+powershell -ExecutionPolicy Bypass -c "irm https://nabi.sh/install.ps1 | iex"
+```
+
+`nabi toolchain update`도 `NABI_DIST`를 읽으므로, 계속 미러로 업데이트하려면 셸 프로필에(Windows에서는 사용자 환경 변수로) 설정해 두세요. 미러에서 받은 파일도 다른 다운로드와 똑같이 릴리스의 `SHA256SUMS`로 확인하고, `minisign`이 설치되어 있으면 그 서명도 확인합니다. 아래의 압축 파일도 미러의 같은 경로에 있습니다. `https://github.com/nabi-lang/nabi/releases`를 `https://dist.nabi-lang.org`로 바꾸면 됩니다.
+
 ## 압축 파일
 
 <div class="dl">

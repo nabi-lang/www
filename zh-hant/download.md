@@ -20,6 +20,23 @@ powershell -ExecutionPolicy Bypass -c "irm https://nabi.sh/install.ps1 | iex"
 
 工具鏈內含官方套件，因此使用官方套件的程式碼不需網路即可建置。若不想安裝官方套件，可以執行 `curl -fsSL https://nabi.sh | sh -s -- --no-packages`，或在執行任一指令碼前設定 `NABI_NO_PACKAGES=1`（從檔案執行時用 `install.ps1 -NoPackages`）。這會在安裝完成後執行 `nabi component remove packages`。
 
+## 如果 GitHub 連線緩慢或受阻
+
+版本預設從 GitHub 下載。`dist.nabi-lang.org` 以相同的目錄結構鏡像了每一個版本；設定 `NABI_DIST` 即可改從鏡像下載：
+
+```sh
+curl -fsSL https://nabi.sh | NABI_DIST=https://dist.nabi-lang.org sh
+```
+
+在 PowerShell 中：
+
+```powershell
+$env:NABI_DIST = "https://dist.nabi-lang.org"
+powershell -ExecutionPolicy Bypass -c "irm https://nabi.sh/install.ps1 | iex"
+```
+
+`nabi toolchain update` 也會讀取 `NABI_DIST`，因此若要一直透過鏡像更新，請把它寫進 shell 設定檔（Windows：設為使用者環境變數）。從鏡像下載的檔案同樣會以該版本的 `SHA256SUMS` 檢查；安裝了 `minisign` 時也會檢查其簽章。下方的壓縮檔在鏡像上的路徑相同：把 `https://github.com/nabi-lang/nabi/releases` 換成 `https://dist.nabi-lang.org` 即可。
+
 ## 壓縮檔
 
 <div class="dl">

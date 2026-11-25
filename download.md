@@ -20,6 +20,23 @@ The script picks the archive for your machine (on Windows, by the machine's arch
 
 The toolchain comes with the official packages, so code that uses them builds without a network. To leave them out: `curl -fsSL https://nabi.sh | sh -s -- --no-packages`, or set `NABI_NO_PACKAGES=1` before either script (`install.ps1 -NoPackages` when run from a file). This runs `nabi component remove packages` after the install.
 
+## If GitHub is slow or blocked
+
+Releases are downloaded from GitHub. `dist.nabi-lang.org` mirrors every release in the same layout; set `NABI_DIST` to download from it instead:
+
+```sh
+curl -fsSL https://nabi.sh | NABI_DIST=https://dist.nabi-lang.org sh
+```
+
+In PowerShell:
+
+```powershell
+$env:NABI_DIST = "https://dist.nabi-lang.org"
+powershell -ExecutionPolicy Bypass -c "irm https://nabi.sh/install.ps1 | iex"
+```
+
+`nabi toolchain update` reads `NABI_DIST` too, so set it in your shell profile (Windows: as a user environment variable) to keep updating through the mirror. Downloads from the mirror are checked against the release's `SHA256SUMS` like any other, and against its signature when `minisign` is installed. An archive below is at the same path on the mirror: replace `https://github.com/nabi-lang/nabi/releases` with `https://dist.nabi-lang.org`.
+
 ## Archives
 
 <div class="dl">
