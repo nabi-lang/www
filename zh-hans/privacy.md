@@ -2,7 +2,7 @@
 
 生效日期：2026-11-23。
 
-本声明适用于所有 Nabi 网站：nabi-lang.org、docs.nabi-lang.org、packages.nabi-lang.org、playground.nabi-lang.org 和 nabi.sh。它说明每个网站保存哪些关于您的信息、为什么保存、保存多久，以及如何联系我们。
+本声明适用于所有 Nabi 网站：nabi-lang.org、docs.nabi-lang.org、packages.nabi-lang.org、playground.nabi-lang.org、dist.nabi-lang.org 和 nabi.sh。它说明每个网站保存哪些关于您的信息、为什么保存、保存多久，以及如何联系我们。
 
 ## 我们是谁
 

@@ -2,7 +2,7 @@
 
 시행일: 2026-11-23.
 
-이 약관은 **DaminStudio**("우리")가 운영하는 모든 Nabi 사이트에 적용됩니다: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org, nabi.sh. 사이트를 이용하면 이 약관에 동의하는 것입니다.
+이 약관은 **DaminStudio**("우리")가 운영하는 모든 Nabi 사이트에 적용됩니다: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org, dist.nabi-lang.org, nabi.sh. 사이트를 이용하면 이 약관에 동의하는 것입니다.
 
 ## 사이트와 toolchain
 

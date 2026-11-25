@@ -2,7 +2,7 @@
 
 시행일: 2026-11-23.
 
-이 방침은 모든 Nabi 사이트에 적용됩니다: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org, nabi.sh. 각 사이트가 여러분에 관해 무엇을, 왜, 얼마나 오래 보관하는지와 연락할 곳을 밝힙니다.
+이 방침은 모든 Nabi 사이트에 적용됩니다: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org, dist.nabi-lang.org, nabi.sh. 각 사이트가 여러분에 관해 무엇을, 왜, 얼마나 오래 보관하는지와 연락할 곳을 밝힙니다.
 
 ## 운영자
 

@@ -2,7 +2,7 @@
 
 生效日期：2026-11-23。
 
-本条款适用于所有 Nabi 网站：nabi-lang.org、docs.nabi-lang.org、packages.nabi-lang.org、playground.nabi-lang.org 和 nabi.sh，这些网站由 **DaminStudio**（“我们”）运营。使用任一网站即表示您同意本条款。
+本条款适用于所有 Nabi 网站：nabi-lang.org、docs.nabi-lang.org、packages.nabi-lang.org、playground.nabi-lang.org、dist.nabi-lang.org 和 nabi.sh，这些网站由 **DaminStudio**（“我们”）运营。使用任一网站即表示您同意本条款。
 
 ## 网站与工具链
 

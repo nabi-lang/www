@@ -2,7 +2,7 @@
 
 Effective 2026-11-23.
 
-These terms apply to every Nabi site: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org and nabi.sh, run by **DaminStudio** ("we"). By using a site you agree to them.
+These terms apply to every Nabi site: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org, dist.nabi-lang.org and nabi.sh, run by **DaminStudio** ("we"). By using a site you agree to them.
 
 ## The sites and the toolchain
 

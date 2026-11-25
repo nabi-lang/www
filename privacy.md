@@ -2,7 +2,7 @@
 
 Effective 2026-11-23.
 
-This notice covers every Nabi site: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org and nabi.sh. It says what each keeps about you, why, for how long, and how to reach us.
+This notice covers every Nabi site: nabi-lang.org, docs.nabi-lang.org, packages.nabi-lang.org, playground.nabi-lang.org, dist.nabi-lang.org and nabi.sh. It says what each keeps about you, why, for how long, and how to reach us.
 
 ## Who we are
 
