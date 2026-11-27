@@ -39,6 +39,7 @@
 ## 已發布
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.6</span><time datetime="2026-11-28">2026-11-28</time><p>僅 const 參數不同的兩個型別（如混用單位）的錯誤訊息更清楚，並附帶 <code>units</code> 套件 0.1.1。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.6">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.5</span><time datetime="2026-11-24">2026-11-24</time><p>修正版本：因 0.1.4 的回歸而無法建置的 <code>table</code> 套件及相依於它的專案恢復建置。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.5">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.4</span><time datetime="2026-11-24">2026-11-24</time><p>修正模式與推斷，沿用其他語言習慣的寫法會得到說明應改寫成什麼的錯誤。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.4">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code> 以登錄庫的安全性公告檢查 <code>nabi.lock</code> 中鎖定的套件。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">發行說明</a></p></div>

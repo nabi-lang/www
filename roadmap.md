@@ -39,6 +39,7 @@
 ## Shipped
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.6</span><time datetime="2026-11-28">2026-11-28</time><p>Clearer errors when two types differ only in const parameters, such as mixing units, and the <code>units</code> package 0.1.1 bundled. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.6">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.5</span><time datetime="2026-11-24">2026-11-24</time><p>A fix release: the <code>table</code> package, and projects that depend on it, build again after a 0.1.4 regression. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.5">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.4</span><time datetime="2026-11-24">2026-11-24</time><p>Pattern and inference fixes, and errors for habits from other languages that say what to write instead. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.4">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-11-22">2026-11-22</time><p><code>nabi audit</code> checks the packages pinned in <code>nabi.lock</code> against the registry's security advisories. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.3">Release notes</a></p></div>
