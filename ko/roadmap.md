@@ -39,6 +39,7 @@
 ## 출시됨
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.7</span><time datetime="2026-11-28">2026-11-28</time><p>연산자로 <code>-></code>를 묶을 수 있어, 단위 변환을 유니코드 화살표 없이 <code>5km -> mi</code>로 씁니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.7">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.6</span><time datetime="2026-11-28">2026-11-28</time><p>const 매개변수만 다른 두 타입(단위 혼용 등)에 대한 오류가 더 분명해지고, <code>units</code> 패키지 0.1.1을 함께 담습니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.6">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.5</span><time datetime="2026-11-24">2026-11-24</time><p>수정 릴리스입니다. 0.1.4의 회귀로 빌드되지 않던 <code>table</code> 패키지와 이에 의존하는 프로젝트가 다시 빌드됩니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.5">릴리스 노트</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.4</span><time datetime="2026-11-24">2026-11-24</time><p>패턴과 추론을 고치고, 다른 언어의 습관에서 나온 코드에 무엇을 대신 쓸지 알려 주는 오류를 냅니다. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.4">릴리스 노트</a></p></div>
