@@ -39,6 +39,7 @@
 ## Shipped
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.8</span><time datetime="2026-11-28">2026-11-28</time><p>The <code>units</code> package 0.1.2 bundled, which converts with <code>-></code> (<code>5km -> mi</code>). <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.8">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.7</span><time datetime="2026-11-28">2026-11-28</time><p>Operators can bind <code>-></code>, so unit conversions read <code>5km -> mi</code> with no Unicode arrow to type. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.7">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.6</span><time datetime="2026-11-28">2026-11-28</time><p>Clearer errors when two types differ only in const parameters, such as mixing units, and the <code>units</code> package 0.1.1 bundled. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.6">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.5</span><time datetime="2026-11-24">2026-11-24</time><p>A fix release: the <code>table</code> package, and projects that depend on it, build again after a 0.1.4 regression. <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.5">Release notes</a></p></div>
