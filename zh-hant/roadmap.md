@@ -39,6 +39,7 @@
 ## 已發布
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.8</span><time datetime="2026-11-28">2026-11-28</time><p>附帶以 <code>-></code> 換算的 <code>units</code> 套件 0.1.2（<code>5km -> mi</code>）。 <a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.8">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.7</span><time datetime="2026-11-28">2026-11-28</time><p>運算子可以繫結 <code>-></code>，單位換算寫作 <code>5km -> mi</code>，不必輸入 Unicode 箭頭。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.7">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.6</span><time datetime="2026-11-28">2026-11-28</time><p>僅 const 參數不同的兩個型別（如混用單位）的錯誤訊息更清楚，並附帶 <code>units</code> 套件 0.1.1。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.6">發行說明</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.5</span><time datetime="2026-11-24">2026-11-24</time><p>修正版本：因 0.1.4 的回歸而無法建置的 <code>table</code> 套件及相依於它的專案恢復建置。<a href="https://github.com/nabi-lang/nabi/releases/tag/v0.1.5">發行說明</a></p></div>
